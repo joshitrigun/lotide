@@ -7,7 +7,9 @@ const assertEqual = (actual, expected) => {
     return false;
   }
 };
-
+/*
+hey
+*/
 const head = (arr) => arr[0];
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
