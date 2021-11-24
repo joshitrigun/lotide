@@ -7,5 +7,9 @@ const assertEqual = (actual, expected) => {
     return false;
   }
 };
+/*
 assertEqual("Lighthouse labs", "Bootcamp");
 assertEqual(1, 1);
+
+*/
+module.exports = assertEqual;
