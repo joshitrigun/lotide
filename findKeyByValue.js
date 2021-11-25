@@ -1,5 +1,9 @@
 const assertEqual = require("./assertEqual");
+
 const findKeyByValue = (obj, value) => {
+  //for (const [key, value] of Object.entries(obj)) {
+  // return `${key}: ${value}`;
+  // }
   for (const oKey in obj) {
     if (obj[oKey] === value) {
       return oKey;

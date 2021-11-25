@@ -3,8 +3,8 @@ const assertEqual = require("./assertEqual");
 // itemsToCount: an object specifying what to count
 const countOnly = function (allItems, itemsToCount) {
   const results = [];
-  console.log(allItems);
-  console.log(itemsToCount);
+  //console.log(allItems);
+  //console.log(itemsToCount);
   for (let item of allItems) {
     if (itemsToCount[item]) {
       /*
