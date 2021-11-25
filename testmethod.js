@@ -1,12 +1,18 @@
-const bigfoot = {
-  name: "trigun",
-  num: 1,
-  saymyName: function () {
-    console.log(`hello, ${this.name}`);
-  },
+const letterPositions = (sentence) => {
+  const letterPosition = {};
+  for (let i = 0; i < sentence.length; i++) {
+    const currentChar = sentence[i];
+    //console.log(currentChar);
+    if (currentChar !== " ") {
+      if (letterPosition[currentChar]) {
+        letterPosition[currentChar].push(i);
+      } else {
+        letterPosition[currentChar] = [i];
+      }
+    }
+  }
+  console.log(letterPosition);
+  return letterPosition;
 };
 
-//console.log(bigfoot.growl);
-
-//bigfoot.growl();
-bigfoot.saymyName();
+letterPositions("hhhh");
