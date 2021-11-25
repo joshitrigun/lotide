@@ -5,6 +5,7 @@ const findKeyByValue = (obj, value) => {
   // return `${key}: ${value}`;
   // }
   for (const oKey in obj) {
+    console.log(oKey);
     if (obj[oKey] === value) {
       return oKey;
     }
