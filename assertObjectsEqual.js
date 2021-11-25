@@ -1,5 +1,4 @@
 const eqObjects = require("./eqObjects");
-const eqArrays = require("./eqArrays");
 
 const assertObjectsEqual = (actual, expected) => {
   const inspect = require("util").inspect;
@@ -25,4 +24,3 @@ assertObjectsEqual(ab, ba); // => should PASS
 assertObjectsEqual(ab, abc); // => should FAIL
 assertObjectsEqual(cd, dc); // => should PASS
 assertObjectsEqual(cd, cd2); // => should FAIL
-module.exports = assertArraysEqual;
