@@ -12,7 +12,8 @@ const countOnly = function (allItems, itemsToCount) {
         results[item]++;
       } else {
         results[item] = 1;
-      } */
+      }
+ */
       !results[item] ? (results[item] = 1) : (results[item] += 1);
     }
   }
