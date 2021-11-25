@@ -4,7 +4,7 @@ const assertArraysEqual = require("./assertArraysEqual");
 const numArray = [1, 3, 4, 5, 6, 7, 8, 12, 3, 6, 54, 87, 32, 33];
 
 const mid = Math.floor(numArray.length / 2);
-const len = numArray.length;
+//const len = numArray.length;
 
 const middle = (arr) => {
   let newArr = [];
