@@ -1,12 +1,6 @@
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
-
-const numArray = [1, 3, 4, 5, 6, 7, 8, 12, 3, 6, 54, 87, 32, 33];
-
-const mid = Math.floor(numArray.length / 2);
-//const len = numArray.length;
-
 const middle = (arr) => {
+  const mid = Math.floor(arr.length / 2);
+
   let newArr = [];
   if (arr.length % 2 === 0) {
     newArr.push(arr[mid - 1]);
@@ -17,8 +11,4 @@ const middle = (arr) => {
   return newArr;
 };
 
-middle(numArray);
-console.log(middle(numArray));
-assertArraysEqual(middle(numArray), [8, 12]);
-//optional chaining
-// how to use assertion here
+module.exports = middle;
