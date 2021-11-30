@@ -1,6 +1,6 @@
 const middle = (arr) => {
   const mid = Math.floor(arr.length / 2);
-
+  
   let newArr = [];
   if (arr.length % 2 === 0) {
     newArr.push(arr[mid - 1]);
